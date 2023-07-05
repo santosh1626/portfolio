@@ -1,19 +1,20 @@
 /* ;
  */
-:root{
-    --white:#fefecc;
+:root {
+    --white: #fefecc;
     --dark: #1b1a17;
-    --primary:rgb(61, 16, 0);
+    --primary: rgb(61, 16, 0);
 
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif
 }
 
-body{
+body {
     background: coral;
     display: flex;
     justify-content: center;
@@ -21,7 +22,7 @@ body{
     min-height: 100vh;
 }
 
-.container{
+.container {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -33,30 +34,30 @@ body{
     box-shadow: 0 35px 50px 50px rgba(0, 0, 0, 0.20);
 }
 
-.container .left-side{
+.container .left-side {
     position: relative;
     background: #51c4d3;
     padding: 40px;
 }
 
-.profileText{
+.profileText {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.418);
 }
 
-.profileText .imgBox{
+.profileText .imgBox {
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.profileText .imgBox img{
+.profileText .imgBox img {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,7 +66,7 @@ body{
     object-fit: cover;
 }
 
-.profileText h2{
+.profileText h2 {
     color: var(--dark);
     font-size: 1.5em;
     margin-top: 20px;
@@ -77,37 +78,38 @@ body{
 
 }
 
-.profileText h2:hover{
+.profileText h2:hover {
     letter-spacing: 3px;
 }
 
-.profileText h2 span{
+.profileText h2 span {
     font-size: 0.8em;
     font-weight: 300;
     color: var(--white);
     letter-spacing: 0px !important;
 }
 
-.contactInfor{
+.contactInfor {
     padding-top: 40px;
 }
 
-.contactInfor .title{
+.contactInfor .title {
     color: var(--dark);
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 20px;
     transition: 0.2s;
-} 
-.contactInfor .title:hover{
+}
+
+.contactInfor .title:hover {
     letter-spacing: 3px;
 }
 
-.contactInfor ul{
+.contactInfor ul {
     position: relative;
 }
 
-.contactInfor ul li{
+.contactInfor ul li {
     list-style: none;
     position: relative;
     margin: 7px 0;
@@ -115,44 +117,48 @@ body{
 }
 
 
-.contactInfor ul li .fa-mobile{
+.contactInfor ul li .fa-mobile {
     margin-left: 5px;
-    
+
 }
 
 
-.contactInfor ul li .icon{
+.contactInfor ul li .icon {
     color: var(--primary);
     display: inline-block;
     font-size: 18px;
     width: 30px;
-    
+
 }
 
-.contactInfor ul li span{
+.contactInfor ul li span {
     color: var(--white);
     font-weight: 300;
 }
 
-.contactInfor .education{
+.contactInfor ul li a {
+    text-decoration: none;
+}
+
+.contactInfor .education {
     margin-bottom: 15px;
 }
 
-.education h5{
+.education h5 {
     color: var(--primary);
 }
 
-.education h4:nth-child(2){
+.education h4:nth-child(2) {
     color: var(--dark);
-    font-weight: 600;  
+    font-weight: 600;
 }
 
-.education h4{
+.education h4 {
     color: var(--dark);
-    font-weight: 300;  
+    font-weight: 300;
 }
 
-.language .percent{
+.language .percent {
     position: relative;
     width: 100%;
     height: 6px;
@@ -160,7 +166,8 @@ body{
     display: block;
     margin-top: 5px;
 }
-.language .percent div{
+
+.language .percent div {
     position: absolute;
     top: 0;
     left: 0;
@@ -173,61 +180,62 @@ body{
 
 
 
-.container .right-side{
+.container .right-side {
     position: relative;
     background: #d8e3e7;
     padding: 40px;
 }
 
-.right-side h2{
+.right-side h2 {
     transition: 0.3s;
 }
-.right-side h2:hover{
-    letter-spacing: 3px;
-} 
 
-.right-side .about{
+.right-side h2:hover {
+    letter-spacing: 3px;
+}
+
+.right-side .about {
     margin-bottom: 50px;
 }
 
-.title{
+.title {
     color: var(--primary);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
-.title p{
-    color: var(--primary);   
+.title p {
+    color: var(--primary);
 }
 
-.about .box{
+.about .box {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
 }
 
-.about .box .year-company{
+.about .box .year-company {
     min-width: 180px;
 }
 
-.about .box .year-company h5{
+.about .box .year-company h5 {
     text-transform: uppercase;
     color: var(--primary);
     font-weight: 600;
 }
 
 
-.about .box h4{
+.about .box h4 {
     text-transform: uppercase;
     color: coral;
 }
 
-.skills h4{
+.skills h4 {
     color: var(--primary) !important;
 }
 
-.skills .box{
+.skills .box {
     position: relative;
     width: 100%;
     display: grid;
@@ -236,7 +244,7 @@ body{
     align-items: center;
 }
 
-.skills .box h4{
+.skills .box h4 {
     text-transform: uppercase;
     color: var(--primary);
     font-weight: 600;
@@ -244,31 +252,31 @@ body{
     transition: 0.2s;
 }
 
-.skills .box h4:hover{
+.skills .box h4:hover {
     letter-spacing: 3px;
 }
 
-.percent{
+.percent {
     border-radius: 10px;
 }
 
-.skills .box .percent{
+.skills .box .percent {
     position: relative;
     width: 100%;
     height: 8px;
-    background-color: #000000; 
+    background-color: #000000;
 }
 
-.skills .box .percent div{
-     position: absolute;
-     top: 0;
-     left: 0;
-     height: 100%;
-     background-color:var(--white) ;
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--white);
 }
 
 @media screen and (max-width: 500px) {
-    .container{
+    .container {
         grid-template-columns: 1fr;
     }
 }
